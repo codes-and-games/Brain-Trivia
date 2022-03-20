@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
-
+@tailwind base;
 
 .toggle:checked ~ label div.toggle-dot{
   @apply translate-x-2;
 }
 
+@tailwind components;
+@tailwind utilities;
 
 html{
     scroll-behavior: smooth;
