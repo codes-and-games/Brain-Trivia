@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brain Trivia</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/32/000000/external-brain-world-cancer-day-inipagistudio-lineal-color-inipagistudio.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-100 transition-colors duration-300">
+    <!-- <nav class="z-50 rounded-full">
+        <ul class="box-border drop-shadow-2xl flex pt-5 pb-5 pl-[960px] space-x-10 text-base z-50 bg-neutral-100">
+            <li
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 hover:cursor-pointer">
+                <a>Home</a>
+            </li>
+            <li
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 hover:cursor-pointer">
+                <a href="quizzes.html">Quizzes</a>
+            </li>
+            <li
+                class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center mx-1 hover:cursor-pointer">
+                <a href="https://codes-and-games.github.io/Resume-of-Divyesh-S-Idhate/">Contact Developer</a>
+            </li>
+        </ul>
+    </nav> -->
+
+    <nav class="bg-neutral-100 border-indigo-600">
+      <div class="container">
+        <h1 class="title" style="font-family: 'Redressed', sans-serif">
+          BRAIN TRIVIA
+        </h1>
+
+        <div class="menu">
+          <a href="#" class="is-active">Home</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="contact page/index.html">Contact Me</a>
+        </div>
+
+        <button class="hamburger">
+          <span class="bg-zinc-700"></span>
+          <span class="bg-zinc-700"></span>
+          <span class="bg-zinc-700"></span>
+        </button>
+        <script src="script.js"></script>
+      </div>
+    </nav>
+
+    <div class="flex border shadow-2xl rounded-2xl z-50 pt-10">
+      <div class="lg:1/2 pl-20">
+        <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl pt-28">
+          Welcome to
+          <span class="text-indigo-600">Brain Trivia</span>
+        </h2>
+        <p class="mt-2 text-sm text-gray-500 md:text-base max-w-xl pt-2">
+          Are you bored? Can you answer some of the most brain swirling
+          questions? Then welcome to the
+          <span class="text-indigo-600 text-xl">Brain Trivia!</span> Solve
+          questions on different aspects based on
+          <span class="text-indigo-600 text-xl">STEM</span> (Science,
+          Technology, Engineering and Mathematics). You can test your skills on
+          5 different tests. Can you take these challenges on? Do you got what
+          it takes? Then what are you waiting for. Start off with one of the
+          finest quizzes.
+        </p>
+        <br />
+        <button
+          onclick="window.location.href='quizzes/full stem/index.html'"
+          class="lg:px-4 lg:py-3 bg-gray-900 text-gray-200 text-sm font-semibold rounded hover:bg-gray-800"
+        >
+          <a href="quizzes/full stem/index.html">Take on Full STEM</a>
+        </button>
+        <button
+          onclick="window.location.href='quizzes.html'"
+          class="px-3 py-2 mx-4 lg:px-4 lg:py-3 bg-gray-300 text-gray-900 text-sm font-semibold rounded hover:bg-gray-400"
+        >
+          <a href="quizzes.html">Explore other quizzes</a>
+        </button>
+      </div>
+      <div class="img-bx">
+        <img
+          class="w-[500px] pt-16 ml-20 pb-10"
+          style="clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0 100%)"
+          src="images/STEM.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <br /><br />
+    <h1
+      id="scroll-to-this"
+      class="text-indigo-900 text-3xl font-bold pt-28 text-center pl-4"
+    >
+      Recommended Quizzes
+    </h1>
+    <a href="#scroll-to-this" class="hover:cursor-pointer pt-14">
+      <div class="scroll-down"></div>
+    </a>
+
+    <div class="flex border shadow-2xl rounded-2xl z-50 pt-16">
+      <div class="img-bx">
+        <img
+          class="w-[500px] pt-16 ml-20 pb-10"
+          src="images/Science.jpg"
+          alt=""
+        />
+      </div>
+      <div class="lg:1/2 pl-20">
+        <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl pt-28">
+          Take on
+          <span class="text-indigo-600">The Spicy Science</span>
+        </h2>
+        <p class="mt-2 text-sm text-gray-500 md:text-base max-w-xl pt-2">
+          Science generates solutions for everyday life and helps us to answer
+          the great mysteries of the universe. In other words, science is one of
+          the most important channels of knowledge. So lets start by putting you
+          to a test of <span class="text-indigo-600">The Spicy Science</span>
+        </p>
+        <br />
+        <button
+          onclick="window.location.href='quizzes/science/index.html'"
+          class="lg:px-4 lg:py-3 bg-gray-900 text-gray-200 text-sm font-semibold rounded hover:bg-gray-800"
+        >
+          Take on The Spicy Science
+        </button>
+      </div>
+    </div>
+
+    <div class="flex border shadow-2xl rounded-2xl z-50 pt-10">
+      <div class="lg:1/2 pl-20">
+        <h2 class="text-3xl font-semibold text-gray-800 md:text-4xl pt-28">
+          Take on
+          <span class="text-indigo-600">The Futuristic Technology</span>
+        </h2>
+        <p class="mt-2 text-sm text-gray-500 md:text-base max-w-xl pt-2">
+          Technology brings processes, and tools together, information exchange
+          to promote development for the betterment of mankind. It helps people
+          to solve their problems, reduce excess time, save lives, and help to
+          interact and exchange information. So lets play a quiz on <span class="text-indigo-600">The Futuristic Technology</span>
+        </p>
+        <br />
+        <button
+          onclick="window.location.href='quizzes/technology/index.html'"
+          class="lg:px-4 lg:py-3 bg-gray-900 text-gray-200 text-sm font-semibold rounded hover:bg-gray-800"
+        >
+          Take on The Futuristic Technology
+        </button>
+      </div>
+
+      <div class="img-bx">
+        <img
+          class="w-[500px] pt-16 ml-20 pb-10"
+          style="clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0 100%)"
+          src="images/technolgy.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <br /><br />
+    <footer class="space-x-9 justify-center">
+      <div class="flex space-x-9">
+        <img
+          class="pl-9"
+          src="https://img.icons8.com/external-inipagistudio-lineal-color-inipagistudio/32/000000/external-brain-world-cancer-day-inipagistudio-lineal-color-inipagistudio.png"
+        />
+
+        <h1 class="company-name text-3xl s">Brain Trivia</h1>
+        <span class="text-base pt-2"
+          >Copyright &copy; 2022 BrainTrivia.com</span
+        >
+        <div class="flex space-x-9 pl-80 w-auto">
+          <a
+            href="https://codes-and-games.github.io/Resume-of-Divyesh-S-Idhate/"
+            class="hover:cursor-pointer"
+            ><img src="https://img.icons8.com/fluency/32/000000/link.png"
+          /></a>
+          <a
+            href="https://github.com/codes-and-games"
+            class="hover:cursor-pointer"
+            ><img src="https://img.icons8.com/ios-filled/32/000000/github.png"
+          /></a>
+          <a
+            href="https://www.instagram.com/divyesh__idhate__/"
+            class="hover:cursor-pointer"
+            ><img
+              src="https://img.icons8.com/fluency/32/000000/instagram-new.png"
+          /></a>
+          <a
+            href="https://www.youtube.com/channel/UC1Hkg61XhjM24z3lLqIgRfQ"
+            class="hover:cursor-pointer"
+            ><img
+              src="https://img.icons8.com/external-prettycons-flat-prettycons/32/000000/external-youtube-multimedia-prettycons-flat-prettycons.png"
+          /></a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100073303075244"
+            class="hover:cursor-pointer"
+            ><img
+              src="https://img.icons8.com/fluency/32/000000/facebook-new.png"
+          /></a>
+          <a
+            href="https://twitter.com/DivyeshIdhate"
+            class="hover:cursor-pointer"
+            ><img src="https://img.icons8.com/fluency/32/000000/twitter.png"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <br />
+
+  </body>
+</html>
